@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 16:55:10 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/24 18:24:58 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:54:20 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
+	if (s == NULL)
+		return ;
 	while (s[i])
 	{
 		f(i, &s[i]);
@@ -24,15 +26,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-void	uppercase(unsigned int i, char *s)
+/* void	uppercase(unsigned int i, char *s)
 {
 	if ('a' <= s[i] && s[i] <= 'z')
 		s[i] -= ('a' - 'A');
 }
 
-/* int	main(void)
+int	main(void)
 {
-	char			s[] = "abcd";
+	char			*s = NULL;
 	unsigned int	i = 0;
 
 	ft_striteri(s, &uppercase);

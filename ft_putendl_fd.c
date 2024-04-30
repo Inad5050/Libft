@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:06:03 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/24 10:59:11 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:00:07 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 	{
 		write(fd, s, 1);
@@ -24,7 +26,7 @@ void	ft_putendl_fd(char *s, int fd)
 
 /* int	main(void)
 {
-	char	s[] = "ola que tal";
+	char	*s = NULL;
 	int		fd = 1;
 
 	ft_putendl_fd(s, fd);

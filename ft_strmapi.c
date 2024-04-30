@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 15:23:48 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/25 07:29:07 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:55:53 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 int	main(void)
 {
 	char	*str;
-	char const	s[] = "abcd";
+	char const	*s = NULL;
 
-	str = ft_strmapi(s, &uppercase);s
+	str = ft_strmapi(s, &uppercase);
 	while (*str)
 	{
 		write (1, str, 1);

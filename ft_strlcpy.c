@@ -6,12 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 11:22:53 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/22 12:39:49 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:08:46 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <string.h> */
-/* #include <stdio.h> */
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)

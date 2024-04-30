@@ -6,12 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 08:48:19 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/23 15:24:09 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:08:15 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
-/* #include <string.h> */
 #include "libft.h"
 
 char	*ft_strchr(const char *str, char character)

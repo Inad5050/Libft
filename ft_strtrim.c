@@ -6,14 +6,14 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 18:19:16 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/24 15:15:02 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:05:14 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		anihilate(char *set, char s);
-char	*strtostr(char *result, char const *s1, size_t end, size_t start);
+int		ft_anihilate(char *set, char s);
+char	*ft_strtostr(char *result, char const *s1, size_t end, size_t start);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -27,20 +27,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	if (s1 == NULL || set == NULL)
 		return (NULL);
-	while (anihilate((char *)set, s1[start]) == 1 && s1[start])
+	while (ft_anihilate((char *)set, s1[start]) == 1 && s1[start])
 		start++;
 	while (s1[end])
 		end++;
-	while (anihilate((char *)set, s1[end - 1]) == 1 && end > start)
+	while (ft_anihilate((char *)set, s1[end - 1]) == 1 && end > start)
 		end--;
 	result = (char *)malloc((end - start + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
-	result = strtostr(result, s1, end, start);
+	result = ft_strtostr(result, s1, end, start);
 	return (result);
 }
 
-int	anihilate(char *set, char s)
+int	ft_anihilate(char *set, char s)
 {
 	int	i;
 
@@ -54,7 +54,7 @@ int	anihilate(char *set, char s)
 	return (0);
 }
 
-char	*strtostr(char *result, char const *s1, size_t end, size_t start)
+char	*ft_strtostr(char *result, char const *s1, size_t end, size_t start)
 {
 	char	*str;
 	size_t	i;

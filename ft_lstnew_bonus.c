@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/25 08:19:16 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/29 12:55:24 by dangonz3         ###   ########.fr       */
+/*   Created: 2024/04/29 12:14:04 by dangonz3          #+#    #+#             */
+/*   Updated: 2024/04/29 13:39:08 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,9 @@ t_list	*ft_lstnew(void *content)
 
 /* int	main(void)
 {
-	char	str[] = "abcd";
-	t_list	*node = ft_lstnew(str);
+	char	content[] = "HOLA";
+	t_list	*new_node = ft_lstnew(content);
 
-	if (node)
-		printf("%s\n", (char *)(node->content));
-	return (0);
-} */
-
-/* int	main(void)
-{
-	int		i = 42;
-	t_list	*node = ft_lstnew(&i);
-
-	if (node)
-		printf("%d\n", *(int *)(node->content));
+	printf("%s\n", new_node->content);
 	return (0);
 } */

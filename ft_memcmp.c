@@ -6,11 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:53:06 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/22 17:58:03 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:08:00 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

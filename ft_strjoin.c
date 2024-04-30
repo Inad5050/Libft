@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:42:42 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/27 15:47:04 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:22:07 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,12 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 /* int	main(void)
 {
-	char *result = ft_strjoin("uno, ", "dos");
+	char *result = ft_strjoin("222", "");
 
 	while (*result)
 	{
 		write(1, result, 1);
-		result++;
+		result++; 
 	}
 	return (0);
 } */

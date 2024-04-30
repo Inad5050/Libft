@@ -5,41 +5,34 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/11 08:55:40 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/22 10:58:14 by dangonz3         ###   ########.fr       */
+/*   Created: 2024/04/30 10:45:20 by dangonz3          #+#    #+#             */
+/*   Updated: 2024/04/30 17:35:16 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int initial_value, size_t size)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*temporary;
+	unsigned char	*temp;
+	int				i;
 
-	temporary = (unsigned char *)ptr;
-	while (size != 0)
+	i = 0;
+	temp = (unsigned char *)b;
+	while (len)
 	{
-		*temporary = (unsigned char) initial_value;
-		temporary++;
-		size--;
+		*temp = (unsigned char)c;
+		len--;
+		temp++;
 	}
-	return (ptr);
+	return (b);
 }
 
 /* int	main(void)
 {
-	char	ptr[] = "12345";
-	int	initial_value = 0;
-	size_t	size = 6;
-	char	backup = *ptr;
-	size_t	i = 0;
+	size_t	len = 5;
+	char	*str = (char *)malloc(len * sizeof(char));
 
-	ft_memset(ptr, initial_value, size);
-	while (i < size)
-	{
-		printf("%c\n", backup);
-		i++;
-	}
+	printf("%s\n", ft_memset(str, '5', len));
 	return (0);
 } */

@@ -6,12 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:51:13 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/22 17:19:23 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:09:03 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
-/* #include <string.h> */
 #include "libft.h"
 
 char	*ft_strnstr(const char *hay, const char *ndle, size_t len)

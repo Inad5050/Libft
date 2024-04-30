@@ -6,11 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 08:29:56 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/24 18:42:44 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:09:12 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
 #include "libft.h"
 
 int	ft_tolower(int c)

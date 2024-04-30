@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/25 14:32:57 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/29 17:15:43 by dangonz3         ###   ########.fr       */
+/*   Created: 2024/04/29 16:04:41 by dangonz3          #+#    #+#             */
+/*   Updated: 2024/04/29 17:21:12 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,48 +14,37 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*current;
+	t_list	*temp;
 
-	current = lst;
-	while (current)
+	temp = lst;
+	while (temp)
 	{
-		f(current->content);
-		current = current->next;
+		f(temp->content);
+		temp = temp->next;
 	}
 }
 
-/* void	f(void *str)
+/* void	capitalize(void *str)
 {
-	char	*strr = (char *)str;
-	int		i = 0;
+	int		i;
+	char	*str2;
 
-	while (strr[i])
+	i = 0;
+	str2 = ft_strdup(char *)str;
+	while (str2[i])
 	{
-		if (('a' <= strr[i] && strr[i] <= 'z'))
-			strr[i] -= ('a' - 'A');
+		if ('a' <= str2[i] && str2[i] <= 'z')
+			str2[i] = str2[i] - ('A' - 'a');
 		i++;
 	}
 }
 
 int	main(void)
 {
-	t_list	*list = NULL;
-	t_list	*node1 = ft_lstnew("Salutations");
-	t_list	*node2 = ft_lstnew("Good to be back on the air");
-	ft_lstadd_back(&list, node1);
-	ft_lstadd_back(&list, node2);
-	t_list	*current = list;
-	while (current)
-	{
-		printf("%s\n", (char *)current->content);
-		current = current->next;
-	}
-	ft_lstiter(list, f);
-	current = list;
-	while (current)
-	{
-		printf("%s\n", (char *)current->content);
-		current = current->next;
-	}
+	t_list	*node1 = ft_lstnew("hola");
+
+	printf("%s\n", node1->content);
+	ft_lstiter(node1, &capitalize);
+	printf("%s\n", node1->content);
 	return (0);
 } */

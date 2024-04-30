@@ -6,13 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 16:29:13 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/22 17:49:10 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:08:20 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
-/* #include <stdlib.h> */
-/* #include <string.h> */
 #include "libft.h"
 
 char	*ft_strdup(const char *str)

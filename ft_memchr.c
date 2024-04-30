@@ -6,11 +6,10 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 09:32:07 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/20 15:51:52 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:07:56 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* #include <stdio.h> */
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/25 09:15:30 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/29 16:37:35 by dangonz3         ###   ########.fr       */
+/*   Created: 2024/04/29 12:56:18 by dangonz3          #+#    #+#             */
+/*   Updated: 2024/04/29 15:10:00 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,17 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 
 /* int	main(void)
 {
-	t_list *list = NULL;
-	t_list *node1 = ft_lstnew("Nodo 1");
-	ft_lstadd_front(&list, node1);
-	t_list *node2 = ft_lstnew("Nodo 2");
-	ft_lstadd_front(&list, node2);
+	t_list	*lst = NULL;
+	t_list	*nodo1 = ft_lstnew("nodo 1");
+	ft_lstadd_front(lst, nodo1);
+	t_list	*nodo2 = ft_lstnew("nodo 2");
+	ft_lstadd_front(lst, nodo2);
+	t_list	*new = ft_lstnew("nodo 3");
+	ft_lstadd_front(lst, new);
 	t_list *current = list;
 	while (current)
 	{
-		printf("%s\n", (char *)current->content);
+		printf("%s\n", (*char)current->content);
 		current = current->next;
 	}
 	return (0);

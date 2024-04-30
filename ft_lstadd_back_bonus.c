@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/25 11:30:26 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/25 12:40:23 by dangonz3         ###   ########.fr       */
+/*   Created: 2024/04/29 14:44:55 by dangonz3          #+#    #+#             */
+/*   Updated: 2024/04/29 18:59:03 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,32 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (!*lst)
+	last = ft_lstlast(*lst);
+	if (last == NULL)
 		*lst = new;
 	else
-	{
-		last = ft_lstlast(*lst);
 		last->next = new;
-	}
 }
 
 /* int	main(void)
 {
-	t_list *list = NULL;
-	t_list *node1 = ft_lstnew("Nodo 1");
-	t_list *node2 = ft_lstnew("Nodo 2");
-	ft_lstadd_front(&list, node2);
-	ft_lstadd_front(&list, node1);
-	t_list *node3 = ft_lstnew("Nodo 3");
-	ft_lstadd_back(&list, node3);
-	while (list)
+	t_list	*lst = NULL;
+	t_list	*nodo1 = ft_lstnew("nodo1");
+	ft_lstadd_front(&lst, nodo1);
+	t_list	*nodo2 = ft_lstnew("nodo2");
+	ft_lstadd_front(&lst, nodo2);
+	t_list	*nodo3 = ft_lstnew("nodo3");
+	t_list	*current = lst;
+	while (current)
 	{
-		printf("%s\n", (char *)list->content);
-		list = list->next;
+	printf("%s\n", current->content);
+	current = current ->next;
 	}
-	return (0);
+	ft_lstadd_back(&lst, nodo3);
+	current = lst;
+	while (current)
+	{
+	printf("%s\n", current->content);
+	current = current ->next;
+	}
 } */
