@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int		ft_anihilate(char *set, char s);
+int	ft_anihilate(char *set, char s);
 char	*ft_strtostr(char *result, char const *s1, size_t end, size_t start);
 
 char	*ft_strtrim(char const *s1, char const *set)
