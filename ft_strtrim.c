@@ -19,12 +19,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	size_t	i;
 	char	*result;
 
 	start = 0;
 	end = 0;
-	i = 0;
 	if (s1 == NULL || set == NULL)
 		return (NULL);
 	while (ft_anihilate((char *)set, s1[start]) == 1 && s1[start])
