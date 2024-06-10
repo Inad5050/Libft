@@ -15,9 +15,7 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*temp;
-	int				i;
 
-	i = 0;
 	temp = (unsigned char *)b;
 	while (len)
 	{
