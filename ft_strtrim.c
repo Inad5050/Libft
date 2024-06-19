@@ -6,13 +6,13 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 18:19:16 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/30 19:05:14 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/10 16:16:10 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_anihilate(char *set, char s);
+int		ft_anihilate(char *set, char s);
 char	*ft_strtostr(char *result, char const *s1, size_t end, size_t start);
 
 char	*ft_strtrim(char const *s1, char const *set)

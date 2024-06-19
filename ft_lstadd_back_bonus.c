@@ -6,21 +6,21 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:44:55 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/29 18:59:03 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/07 12:55:34 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new_node)
 {
 	t_list	*last;
 
 	last = ft_lstlast(*lst);
 	if (last == NULL)
-		*lst = new;
+		*lst = new_node;
 	else
-		last->next = new;
+		last->next = new_node;
 }
 
 /* int	main(void)
