@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/30 11:39:02 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/30 16:00:06 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/19 10:20:11 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,17 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*str;
+	char	*temp;
 
 	str = (void *)malloc(count * size);
 	if (!str)
 		return (NULL);
-	ft_bzero(str, count * size);
+	temp = str;
+	while (size)
+	{
+		*temp = '0';
+		size--;
+		temp++;
+	}
 	return (str);
 }

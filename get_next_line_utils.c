@@ -6,13 +6,13 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 15:49:23 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/06/18 11:44:29 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/19 10:20:33 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+/* size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
@@ -20,7 +20,7 @@ size_t	ft_strlen(const char *str)
 	while (str[i])
 		i++;
 	return (i);
-}
+} */
 
 char	*gnl_strjoin(char *line, const char *buffer)
 {
@@ -49,7 +49,7 @@ char	*gnl_strjoin(char *line, const char *buffer)
 	return (str);
 }
 
-char	*ft_strchr(const char *str, char character)
+/* char	*ft_strchr(const char *str, char character)
 {
 	if (!str)
 		return (NULL);
@@ -62,11 +62,11 @@ char	*ft_strchr(const char *str, char character)
 	if (character == '\0')
 		return ((char *)str);
 	return (NULL);
-}
+} */
 
-void	*ft_calloc(size_t count, size_t size)
+/* void	*ft_calloc(size_t count, size_t size)
 {
-	char	*str;
+	void	*str;
 	char	*temp;
 
 	str = (void *)malloc(count * size);
@@ -80,4 +80,4 @@ void	*ft_calloc(size_t count, size_t size)
 		temp++;
 	}
 	return (str);
-}
+} */
