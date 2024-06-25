@@ -6,13 +6,13 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/04 15:49:57 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/06/18 11:53:09 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/21 13:35:35 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*get_next_line(int fd)
+char	*ft_get_next_line(int fd)
 {
 	static char	*line;
 	char		buffer[BUFFER_SIZE +1];

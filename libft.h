@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 13:16:24 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/06/19 10:21:10 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/06/21 13:34:57 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ int			ptf_print_c(char arg);
 #  define BUFFER_SIZE 42
 # endif
 
-char		*get_next_line(int fd);
+char		*ft_get_next_line(int fd);
 char		*gnl_excess(char *deposit);
 char		*gnl_cut_line(char *deposit);
 char		*gnl_strjoin(char *line, const char *buffer);
