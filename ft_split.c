@@ -6,7 +6,7 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 10:59:19 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/27 11:44:01 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/07/25 18:32:40 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static char	**affect(char const *s, char **dst, char c, int l)
 		k = 0;
 		while (s[i] == c)
 			i++;
-		dst[j] = (char *)malloc(sizeof(char) * numchar(s, c, i) + 1);
+		dst[j] = (char *)ft_calloc(numchar(s, c, i) + 1, sizeof(char));
 		if (dst[j] == NULL)
 			return (freee((char const **)dst, j));
 		while (s[i] != '\0' && s[i] != c)
@@ -92,7 +92,7 @@ char	**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	l = numstring(s, c);
-	dst = (char **)malloc(sizeof(char *) * (l + 1));
+	dst = (char **)ft_calloc((l + 1), sizeof(char *));
 	if (dst == NULL)
 		return (NULL);
 	return (affect(s, dst, c, l));

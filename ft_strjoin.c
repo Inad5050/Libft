@@ -6,13 +6,13 @@
 /*   By: dangonz3 <dangonz3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 17:42:42 by dangonz3          #+#    #+#             */
-/*   Updated: 2024/04/30 18:22:07 by dangonz3         ###   ########.fr       */
+/*   Updated: 2024/07/19 16:03:48 by dangonz3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(char *s1, const char *s2)
 {
 	int		i;
 	int		len_s1;
